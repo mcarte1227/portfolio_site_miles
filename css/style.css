@@ -1,0 +1,88 @@
+body {
+  background-color: AliceBlue;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #002243;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #002243;
+  text-decoration: none;
+}
+
+a:hover {
+  color: SteelBlue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: SteelBlue;
+}
+a:active {
+  color: DarkCyan;
+}
+
+a:hover,
+a:focus {
+  color: SteelBlue;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: #002243;
+  color: SteelBlue;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 0px;
+  border-bottom: 2px solid #23415a;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #002243;
+  text-transform: uppercase;
+  border: 2px solid #002243;
+}
+
+.button.contact:hover {
+  background-color: #002243;
+  color: SteelBlue;
+}
