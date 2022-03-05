@@ -14,10 +14,10 @@
 
 <body>
   <header>
-    <div>
-      <img src="img/logo_copy.svg" height="80px" alt="Miles Carter">
+    <div class="container">
+      <img id="logo" src="img/logo_copy.svg" alt="Miles Carter">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -28,78 +28,91 @@
   <main>
     <div>
     </div>
-    <div>
-    </div>
-    <h1>Welcome!</h1>
-    <span>I'm Miles, an aspiring freelancce UX/UI designer based in the Metro Atlanta area.</span>
-    <p>My aim is to be able to create interesting and aesthetically pleasing designs that are also functional and simple to navigate, with the approach of viewing the design process as another form of art. I’m seeking to improve and expand my current
-      skillset in order to provide users with the best product experience.</p>
-    <div>
-    </div>
-    <h2>PROJECTS</h2>
-    <div>
-    </div>
-    <div>
-      <picture>
-        <source srcset="img/project_1/new_p1_homepage_cover/p1_cover_homepage@1.jpg" width="767px">
-        <img src="img/project_1/new_p1_homepage_cover/p1_cover_homepage@2.jpg" alt="80's Player">
-      </picture>
-      <h3>80's Player</h3>
-      <p>First project under CareerFoundry’s UI design immersion program, where the objective was to create an 80’s themed music player app allowing users to create an account, profile, and personalized playlists.</p>
-      <a href="portfolio_site_miles/80s_player.html" class="button">VIEW PROJECT</a>
-    </div>
-    <div>
-      <br>
-      <br>
-      <picture>
-        <source srcset="img/project_2-3/new_p2-3_homepage_cover/p2-3_cover_homepage@1.jpg" width="767px">
-        <img src="img/project_2-3/new_p2-3_homepage_cover/p2-3_cover_homepage@2.jpg" alt="Easyrecipes">
-      </picture>
-      <h3>Easyrecipes</h3>
-      <p>Responsive recipe web app aimed to provide those with busy, hectic schedules simple and time-saving recipes.</p>
-      <a href="" class="button">VIEW PROJECT</a>
-    </div>
-    <div>
-      <br>
-      <br>
-      <picture>
-        <source srcset="img/project_5/new_p5_homepage_cover/p5_cover_homepage@1.jpg" width="767px">
-        <img src="img/project_5/new_p5_homepage_cover/p5_cover_homepage@2.jpg" alt="UltiMerch">
-      </picture>
-      <h3>UltiMerch</h3>
-      <p>Responsive E-commerce web app where gaming fans can purchase a variety of official merchandise from various franchises and companies.</p>
-      <a href="" class="button">VIEW PROJECT</a>
-    </div>
+    <div id="hero">
+      <div class="container">
+        <h1>Welcome!</h1>
+        <span>I'm Miles, an aspiring freelancce UX/UI designer based in the Metro Atlanta area.</span>
+        <p>My aim is to be able to create interesting and aesthetically pleasing designs that are also functional and simple to navigate, with the approach of viewing the design process as another form of art. I’m seeking to improve and expand my
+          current
+          skillset in order to provide users with the best product experience.</p>
+      </div>
+
+      <div id="projects">
+        <div class="container">
+          <h2>PROJECTS</h2>
+          <div class="row">
+            <div>
+              <picture>
+                <source srcset="img/project_1/new_p1_homepage_cover/p1_cover_homepage@1.jpg" max-width="767px">
+                <img src="img/project_1/new_p1_homepage_cover/p1_cover_homepage@2.jpg" alt="80's Player">
+              </picture>
+            </div>
+            <div class="row">
+              <h3>80's Player</h3>
+              <p>First project under CareerFoundry’s UI design immersion program, where the objective was to create an 80’s themed music player app allowing users to create an account, profile, and personalized playlists.</p>
+              <a href="portfolio_site_miles/80s_player.html" class="button">VIEW PROJECT</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <picture>
+                <source srcset="img/project_2-3/new_p2-3_homepage_cover/p2-3_cover_homepage@1.jpg" max-width="767px">
+                <img src="img/project_2-3/new_p2-3_homepage_cover/p2-3_cover_homepage@2.jpg" alt="Easyrecipes">
+              </picture>
+            </div>
+            <div>
+              <h3>Easyrecipes</h3>
+              <p>Responsive recipe web app aimed to provide those with busy, hectic schedules simple and time-saving recipes.</p>
+              <a href="" class="button">VIEW PROJECT</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <picture>
+                <source srcset="img/project_5/new_p5_homepage_cover/p5_cover_homepage@1.jpg" max-width="767px">
+                <img src="img/project_5/new_p5_homepage_cover/p5_cover_homepage@2.jpg" alt="UltiMerch">
+              </picture>
+            </div>
+            <div>
+              <h3>UltiMerch</h3>
+              <p>Responsive E-commerce web app where gaming fans can purchase a variety of official merchandise from various franchises and companies.</p>
+              <a href="" class="button">VIEW PROJECT</a>
+            </div>
+          </div>
+        </div>
+      </div>
   </main>
 
   <footer id="contact">
-    <div>
+    <div class="container">
       <a href="#contact">CONTACT</a>
+      <h2>Have a question or want me on your next project?</h2>
+      <p>Feel free to send me a message! I usually respond within 12 to 24 business hours. You can also reach out to me through LinkedIn.</p>
     </div>
-    <h2>Have a question or want me on your next project?</h2>
-    <p>Feel free to send me a message! I usually respond within 12 to 24 business hours. You can also reach out to me through LinkedIn.</p>
     <div>
       <a href="mailto:cartermiles1227@gmail.com" class="button contact">EMAIL ME</a>
     </div>
     <div>
       <a href="https://www.linkedin.com/in/miles-carter-8364631a1" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="63" height="57" viewBox="0 0 63 57">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="50" viewBox="0 0 63 57">
           <g id="linkedin" transform="translate(-988.5 -535.924)">
             <path id="icons8-linkedin-2"
               d="M10.522,31H4V11.909h6.522ZM7.262,9.364A3.223,3.223,0,0,1,4,6.181,3.222,3.222,0,0,1,7.262,3a3.224,3.224,0,0,1,3.26,3.181A3.225,3.225,0,0,1,7.262,9.364ZM34,31H27.73V21.709c0-2.216-.043-5.065-3.26-5.065-3.265,0-3.767,2.413-3.767,4.905V31H14.435V11.9h6.018v2.61h.085a6.667,6.667,0,0,1,5.936-3.085c6.352,0,7.526,3.957,7.526,9.1Z"
-              transform="translate(1001 547.424)" />
-            <path id="Path_217" data-name="Path 217" d="M938.355,591.424H916.53v-54h60v54H954.65" transform="translate(73.47)" fill="none" stroke="#000" stroke-width="3" />
+              transform="translate(1001 547.424)" fill="#002243" />
+            <path id="Path_217" data-name="Path 217" d="M938.355,591.424H916.53v-54h60v54H954.65" transform="translate(73.47)" fill="none" stroke="#002243" stroke-width="3" />
           </g>
         </svg>
 
       </a>
       <a href="https://www.behance.net/milescarter2" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="63" height="57" viewBox="0 0 63 57">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="50" viewBox="0 0 63 57">
           <g id="behance" transform="translate(-914.03 -535.924)">
             <path id="behance_logo"
               d="M35.75,17H46.833v3.285H35.75ZM27.061,27.56a4.846,4.846,0,0,0,3.013-4.693c0-5.942-6.257-5.865-7.415-5.865H12V40H23.123C24.049,40,31,39.727,31,33.426,31,29.36,28.451,28.029,27.061,27.56ZM16.75,20.989h4.636c.462,0,3.475.171,3.475,2.582a2.877,2.877,0,0,1-3.011,2.816h-5.1Zm5.282,15.02H16.7V29.674h5.331c1.157,0,3.707.389,3.707,3.285S22.494,36.008,22.032,36.008Zm22.328-.289a4.244,4.244,0,0,1-2.453.716c-3.683,0-4.416-3.221-4.416-4.649H50a17.347,17.347,0,0,0-.245-3.673,7.952,7.952,0,0,0-8.092-6.185c-8.621,0-9.079,7.849-9.079,9.035a8.429,8.429,0,0,0,.739,3.566,8.1,8.1,0,0,0,1.716,2.852,10.869,10.869,0,0,0,2.7,1.9,10.061,10.061,0,0,0,3.68.716,9.266,9.266,0,0,0,5.151-1.426,8.382,8.382,0,0,0,3.189-4.281H45.586A3.207,3.207,0,0,1,44.36,35.719Zm-2.7-10.461c2.4,0,3.433,2.615,3.676,3.8H37.492C37.492,28.824,38.079,25.258,41.662,25.258Z"
-              transform="translate(915 535.5)" />
-            <path id="Path_216" data-name="Path 216" d="M938.355,591.424H916.53v-54h60v54H954.65" transform="translate(-1)" fill="none" stroke="#000" stroke-linejoin="miter" stroke-width="3" />
+              transform="translate(915 535.5)" fill="#002243" />
+            <path id="Path_216" data-name="Path 216" d="M938.355,591.424H916.53v-54h60v54H954.65" transform="translate(-1)" fill="none" stroke="#002243" stroke-linejoin="miter" stroke-width="3" />
           </g>
         </svg>
       </a>
