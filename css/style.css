@@ -1,8 +1,8 @@
 header {
-  background-color: LightSteelBlue;
+  background-color: AliceBlue;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.60);
   position: relative;
 }
 
@@ -13,7 +13,7 @@ header {
 body {
   background-color: AliceBlue;
   font-family: 'Catamaran', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: #002243;
@@ -27,11 +27,13 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.35em;
   font-weight: 300;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.00em;
   font-weight: 430;
+  text-align: center;
 }
 
 h3 {
@@ -54,7 +56,7 @@ a {
 }
 
 a:hover {
-  color: SteelBlue;
+  color: DarkCyan;
   text-decoration: underline;
 }
 
@@ -77,7 +79,11 @@ a:focus {
   background-color: #002243;
   color: AliceBlue;
   font-weight: 400;
-  padding: 10px;
+  text-decoration: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 0px;
   border-bottom: 2px solid #23415a;
   transition: 0.2s opacity;
@@ -92,7 +98,7 @@ a:focus {
   background-color: transparent;
   color: #002243;
   text-transform: uppercase;
-  border: 2px solid #002243;
+  border: 3px solid #002243;
 }
 
 .button.contact:hover {
@@ -107,10 +113,14 @@ a:focus {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 27px 0;
 }
 
 #hero h1 {
+  text-align: center;
+}
+
+#hero span {
   text-align: center;
 }
 
@@ -119,7 +129,7 @@ a:focus {
 }
 
 .logo {
-  max-width: 250 px;
+  max-width: 100px;
 }
 
 nav > ul {
@@ -135,17 +145,93 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #002243
+  color: #LightSteelBlue
 }
 
 nav > ul > li > a:visited {
-  text-transform: uppercase;
+  text-transform: underline;
   width: 100%;
+  color: #DarkCyan
 }
 
 #hero {
-  background-color: LightSteelBlue;
+  background-color: AliceBlue;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+}
+
+  nav {
+    width: auto;
+    float: inherit;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframe cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
