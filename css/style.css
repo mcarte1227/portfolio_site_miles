@@ -1,17 +1,22 @@
 header {
-  background-color: AliceBlue;
+  background-color: #ffffff;
   text-align: center;
   padding: 10px 0;
   box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.60);
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 
 * {
   box-sizing: border-box;
 }
 
+main {
+  padding-top: 270px;
+}
+
 body {
-  background-color: AliceBlue;
+  background-color: #ffffff;
   font-family: 'Catamaran', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -26,7 +31,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.35em;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -56,28 +61,29 @@ a {
 }
 
 a:hover {
-  color: DarkCyan;
-  text-decoration: underline;
+  color: SteelBlue;
+  font-weight: bolder;
 }
 
 a:visited {
-  color: SteelBlue;
+  color: #ffffff;
 }
 
 a:active {
-  color: DarkCyan;
+  color: LightSteelBlue;
+  opacity: 0.3;
 }
 
 a:hover,
 a:focus {
   color: SteelBlue;
-  text-decoration: underline;
+  font-weight: bolder;
+  opacity: 0.3;
 }
 
 .button {
   display: inline-block;
   background-color: #002243;
-  color: AliceBlue;
   font-weight: 400;
   text-decoration: none;
   padding-left: 16px;
@@ -85,7 +91,7 @@ a:focus {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0px;
-  border-bottom: 2px solid #23415a;
+  border-bottom: 2px solid: #002243;
   transition: 0.2s opacity;
 }
 
@@ -95,15 +101,14 @@ a:focus {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #002243;
+  background-color: #002243;
+  color: #ffffff
   text-transform: uppercase;
   border: 3px solid #002243;
 }
 
 .button.contact:hover {
-  background-color: #002243;
-  color: SteelBlue;
+  background-color: SteelBlue;
 }
 
 /* Layout Styling */
@@ -142,20 +147,20 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 20px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #LightSteelBlue
+  color: #002243;
 }
 
 nav > ul > li > a:visited {
   text-transform: underline;
   width: 100%;
-  color: #DarkCyan
+  color: SteelBlue;
 }
 
 #hero {
-  background-color: AliceBlue;
+  background-color: #ffffff
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -179,10 +184,6 @@ nav > ul > li > a:visited {
     display: block;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
   [class*="col-"] {
     float: left;
     padding-left: 10px;
@@ -198,6 +199,9 @@ nav > ul > li > a:visited {
   }
 
 @media only screen and (min-width: 1024px) {
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

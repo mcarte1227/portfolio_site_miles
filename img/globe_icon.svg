@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="globe_icon" transform="translate(-690 -75)">
+    <g id="Ellipse_63" data-name="Ellipse 63" transform="translate(690 75)" fill="none" stroke="#002243" stroke-width="4">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="38" fill="none"/>
+    </g>
+    <line id="Line_4" data-name="Line 4" y2="75" transform="translate(730 78)" fill="none" stroke="#002243" stroke-width="3"/>
+    <line id="Line_11" data-name="Line 11" x1="76" transform="translate(692 115)" fill="none" stroke="#002243" stroke-width="3"/>
+    <path id="Path_210" data-name="Path 210" d="M13-.291S0,10.555,0,36.848s13,36.86,13,36.86" transform="translate(707.895 78.456)" fill="none" stroke="#002243" stroke-width="3"/>
+    <path id="Path_211" data-name="Path 211" d="M0-.291s13,10.846,13,37.14S0,73.709,0,73.709" transform="translate(739.211 78.456)" fill="none" stroke="#002243" stroke-width="3"/>
+    <path id="Path_212" data-name="Path 212" d="M0,0S12,8.208,12,28.106,0,56,0,56" transform="translate(758.388 88.421) rotate(90)" fill="none" stroke="#002243" stroke-width="3"/>
+    <path id="Path_213" data-name="Path 213" d="M12,56S0,47.792,0,27.894,12,0,12,0" transform="translate(758.389 128.685) rotate(90)" fill="none" stroke="#002243" stroke-width="3"/>
+  </g>
+</svg>
