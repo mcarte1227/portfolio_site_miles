@@ -10,19 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/5bc9fc731f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <img id="logo" src="img/new_portfolio_logo.svg" height="100px" alt="Miles Carter">
-      <nav>
-        <ul id="nav" class="navigation">
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img id="logo" src="img/new_portfolio_logo.svg" max-width="150px" min-width="641px" height="60px" alt="Miles Carter">
+        <nav>
+          <ul id="nav" class="navigation">
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -120,8 +124,8 @@
       </div>
       <div class="container">
         <picture>
-          <source srcset="img/project_1/new_p1_style_guide/p1_new_style_guide@1.jpg" max width="767px">
-          <img src="img/project_1/new_p1_style_guide/p1_new_style_guide@2.jpg" alt="My Image">
+          <source srcset="img/project_1/new_p1_style_guide/p1_style_guide@1.jpg" max width="767px">
+          <img src="img/project_1/new_p1_style_guide/p1_style_guide@2.jpg" alt="My Image">
         </picture>
       </div>
       <div class="container">
@@ -129,8 +133,8 @@
       </div>
       <div class="container">
         <picture>
-          <source srcset="img/project_1/new_p1_final_designs/p1_final_design@1.jpg" max width="767px">
-          <img src="img/project_1/new_p1_final_designs/p1_final_design@2.jpg" alt="My Image">
+          <source srcset="img/project_1/new_p1_final_designs/new_p1_final_design@1.jpg" max width="767px">
+          <img src="img/project_1/new_p1_final_designs/new_p1_final_design@2.jpg" alt="My Image">
         </picture>
       </div>
       <div class="container">
@@ -187,6 +191,8 @@
       <p>Copyright Miles Carter 2022</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

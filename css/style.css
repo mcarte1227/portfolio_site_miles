@@ -1,7 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.60);
   position: fixed;
   width: 100%;
@@ -12,7 +15,7 @@ header {
 }
 
 main {
-  padding-top: 270px;
+  padding-top: 215.15px;
 }
 
 body {
@@ -102,8 +105,7 @@ a:focus {
 
 .button.contact {
   background-color: #002243;
-  color: #ffffff
-  text-transform: uppercase;
+  color: #ffffff text-transform: uppercase;
   border: 3px solid #002243;
 }
 
@@ -111,8 +113,37 @@ a:focus {
   background-color: SteelBlue;
 }
 
-/* Layout Styling */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navigate.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+/* Layout Styling */
 .container {
   padding: 0 15px;
 }
@@ -137,70 +168,94 @@ a:focus {
   max-width: 100px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 20px;
   text-transform: uppercase;
   font-weight: 400;
   color: #002243;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   text-transform: underline;
   width: 100%;
   color: SteelBlue;
 }
 
 #hero {
-  background-color: #ffffff
-  padding: 20px 0;
+  background-color: #ffffff padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
-  nav {
-    width: auto;
-    float: inherit;
-    margin-top: 40px;
-    text-align: center;
-  }
+nav {
+  width: auto;
+  float: inherit;
+  margin-top: 40px;
+  text-align: center;
+}
 
-  #hero span {
-    display: block;
-  }
+#hero span {
+  display: block;
+}
 
-  [class*="col-"] {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 @media only screen and (min-width: 1024px) {
-  .col-md-6 {
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .col-lg-5 {
     width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 50%;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 }
 
@@ -210,12 +265,24 @@ nav > ul > li > a:visited {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -223,8 +290,13 @@ nav > ul > li > a:visited {
 }
 
 @keyframe cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -232,8 +304,13 @@ nav > ul > li > a:visited {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px,48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
