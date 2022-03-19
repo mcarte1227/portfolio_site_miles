@@ -1,4 +1,4 @@
-console.log("Welcome to my site")
+console.log('Welcome to my site')
 
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');

@@ -2,8 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style-image: url('img/diamond.svg');
+  padding-left: 20px;
+}
+
+path:hover {
+  background-color: unset;
+  color: SteelBlue;
+}
+
 header {
   background-color: #ffffff;
+  color: inherit;
   padding: 10px 0 4px;
   box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.60);
   position: fixed;
@@ -23,7 +34,7 @@ body {
   font-family: 'Catamaran', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #002243;
 }
 
@@ -33,20 +44,20 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.35em;
+  font-size: 2.37em;
   font-weight: 400;
   text-align: center;
 }
 
 h2 {
   font-size: 2.00em;
-  font-weight: 430;
+  font-weight: 420;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.45em;
-  font-weight: 420;
+  font-size: 1.54em;
+  font-weight: 410;
 }
 
 h4 {
@@ -59,6 +70,7 @@ img {
 }
 
 a {
+  background-color: unset;
   color: #002243;
   text-decoration: none;
 }
@@ -69,16 +81,19 @@ a:hover {
 }
 
 a:visited {
-  color: #ffffff;
+  background-color: unset;
+  color: #002243;
 }
 
 a:active {
+  background-color: unset;
   color: LightSteelBlue;
   opacity: 0.3;
 }
 
 a:hover,
 a:focus {
+  background-color: LightSteelBlue;
   color: SteelBlue;
   font-weight: bolder;
   opacity: 0.3;
@@ -86,7 +101,7 @@ a:focus {
 
 .button {
   display: inline-block;
-  background-color: #002243;
+  background-color: LightSteelBlue;
   font-weight: 400;
   text-decoration: none;
   padding-left: 16px;
@@ -94,7 +109,8 @@ a:focus {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0px;
-  border-bottom: 2px solid: #002243;
+  border-bottom: 2px;
+  color: #002243;
   transition: 0.2s opacity;
 }
 
@@ -104,8 +120,9 @@ a:focus {
 }
 
 .button.contact {
-  background-color: #002243;
-  color: #ffffff text-transform: uppercase;
+  background-color: SteelBlue;
+  color: #002243;
+  text-transform: uppercase;
   border: 3px solid #002243;
 }
 
@@ -166,6 +183,10 @@ a:focus {
 
 .logo {
   max-width: 100px;
+  position: fixed;
+  margin: 10px 15px 15px 10px;
+  left: 0;
+  display: inline;
 }
 
 nav>ul {
@@ -182,13 +203,14 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:visited {
-  text-transform: underline;
+  text-transform: inherit;
   width: 100%;
   color: SteelBlue;
 }
 
 #hero {
-  background-color: #ffffff padding: 20px 0;
+  background-color: #ffffff;
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
@@ -230,8 +252,8 @@ nav {
 [class*="col-"] {
   float: left;
   padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding-right: 26px;
+  padding-top: 16px;
   padding-bottom: 10px;
 }
 
@@ -272,6 +294,16 @@ nav {
 }
 
 @keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -289,7 +321,7 @@ nav {
   animation: 4s color-change infinite alternate linear;
 }
 
-@keyframe cloud-move {
+@keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
@@ -315,4 +347,5 @@ nav {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
 }
